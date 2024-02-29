@@ -1,16 +1,15 @@
 @font-face {
-    src: url("./fonts/FormaDJRVariableNormal[opsz\,slnt\,wght]-Edu.woff2") format("woff2"),
-         url('./fonts/FormaDJRVariableNormal[opsz\,slnt\,wght]-Edu.woff') format("woff"),
-        url('./fonts/FormaDJRVariableNormal[opsz\,slnt\,wght]-Edu.ttf') format('truetype');
+    src: url("fonts/LabDJRVariable[SIZE\,BEVL\,OVAL\,SPRK\,QUAD\,XSWP\,YSWP].ttf") format("truetype"),
+        url('fonts/LabDJRVariable[SIZE\,BEVL\,OVAL\,SPRK\,QUAD\,XSWP\,YSWP].woff2') format('woff2');
 
-    font-family: 'Forma';
+    font-family: 'Lab DJR';
     font-style: normal;
     font-weight: normal;
     }
     
     body{
     background-color: lightsteelblue;
-    font-family: 'Forma';
+    font-family: 'Lab DJR';
 }
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
@@ -56,11 +55,27 @@ h3{
 }
 
 @keyframes weightChange {
-    0%, 100%{
-        font-variation-settings: "opsz" 16, "wght" 200, "slnt" 0;
-    }
-    50%{font-variation-settings: "opsz" 16, "wght" 900, "slnt" -13;
-    }
+    0%{
+        font-variation-settings: 
+        'SIZE' 75, 
+        'OVAL' 0,
+        'BEVL' 10,
+        'SPRK' 50; }
+           50%{
+        font-variation-settings: 
+        'SIZE' 65, 
+        'OVAL' 40, 
+        'BEVL' 100,
+        'SPRK' 200;
+}
+            80%{
+    font-variation-settings: 
+        'SIZE' 85, 
+        'OVAL' 800, 
+        'BEVL' 800, 
+        'SPRK' 1000;
+}
+
     
 }
 /* variable font that changes on hover */
@@ -88,4 +103,4 @@ h3{
     text-align: center;
     font-variation-settings: "wght" 120, "wdth" 0, "XXXX" 100;
 }
-
+hvsvvshvs
