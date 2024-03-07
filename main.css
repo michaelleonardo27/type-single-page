@@ -16,6 +16,12 @@
     background-color: lightsteelblue;
     font-family: 'Lab DJR';
 }
+
+.history-paragraph{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
     width: min(100% - 3rem, 80ch);
@@ -23,7 +29,7 @@
 }
 /* how the page wrapper appears on desktop */
 
-@media only screen and (min-width:800px){
+/* @media only screen and (min-width:800px){
 .page-wrapper{
 display: grid;
 grid-gap: 25px;
@@ -32,7 +38,7 @@ grid-template-rows: auto;
 grid-template-areas: 
     "h v"
     "a a";
-}
+} */
 
 .history {
 grid-area: h;
@@ -59,6 +65,7 @@ footer{
 
 /* variable font animation */
 h3{
+    color: rgb(0, 255, 0);
     font-weight:20; 
     text-align: center;
     font-size: 5em;
@@ -117,8 +124,9 @@ h3{
 .special-character-wrapper {
     display: grid;
     grid-gap: 5px;
+    color: rgb(0, 255, 0);
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: repeat(2, 200px);
+    grid-template-rows: auto;
     font-size: 160px;
 }
 
