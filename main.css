@@ -1,3 +1,8 @@
+/*{
+    border: 3px blue dashed;
+}
+*/
+
 @font-face {
     src: url("fonts/LabDJRVariable[SIZE\,BEVL\,OVAL\,SPRK\,QUAD\,XSWP\,YSWP].ttf") format("truetype"),
         url('fonts/LabDJRVariable[SIZE\,BEVL\,OVAL\,SPRK\,QUAD\,XSWP\,YSWP].woff2') format('woff2');
@@ -31,6 +36,12 @@ grid-template-areas:
 
 .history {
 grid-area: h;
+}
+
+.history-paragraph{
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
 }
 
 .variations{
@@ -103,4 +114,38 @@ h3{
     text-align: center;
     font-variation-settings: "wght" 120, "wdth" 0, "XXXX" 100;
 }
-hvsvvshvs
+.special-character-wrapper {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(2, 200px);
+    font-size: 160px;
+}
+
+.special-character-wrapper div {
+    animation: weightChangeSpecialCharacter 6s infinite;
+}
+
+.special-character-wrapper div:nth-child(odd) {
+    animation-delay: 1s; /* Adjusted delay to stagger properly */
+}
+
+.special-character-wrapper div:nth-child(even) {
+    animation-delay: 2s; /* Adjusted delay to stagger properly */
+}
+
+
+@keyframes weightChangeSpecialCharacter {
+    0%, 100% {
+        font-variation-settings: 
+        'SIZE' 75, 
+        'OVAL' 0,
+        'BEVL' 10,
+        'SPRK' 50;    }
+    50% {
+        font-variation-settings: 
+        'SIZE' 85, 
+        'OVAL' 800, 
+        'BEVL' 800, 
+        'SPRK' 1000;
+}    }
