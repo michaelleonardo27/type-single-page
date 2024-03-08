@@ -13,8 +13,9 @@
     }
     
     body{
-    background-color: lightsteelblue;
+    background-color: rgb(0, 0, 0);
     font-family: 'Lab DJR';
+    color:rgb(0, 255, 17);
 }
 
 .history-paragraph{
@@ -29,7 +30,7 @@
 }
 /* how the page wrapper appears on desktop */
 
-@media only screen and (min-width:800px){
+/* @media only screen and (min-width:800px){
 .page-wrapper{
 display: grid;
 grid-gap: 25px;
@@ -38,7 +39,7 @@ grid-template-rows: auto;
 grid-template-areas: 
     "h v"
     "a a";
-}
+} */
 
 .history {
 grid-area: h;
@@ -57,18 +58,40 @@ grid-area: v;
 .alphabet {
 grid-area: a;
 }
-}
+
 /* CSS for the footer */
 footer{
     background-color: gray;
 }
 
 /* variable font animation */
+h1{
+    font-size: 2em;
+    color: aliceblue;
+}
 h3{
     color: rgb(0, 255, 0);
     font-weight:20; 
     text-align: center;
-    font-size: 5em;
+    font-size: 8em;
+    animation: weightChange 7s infinite;
+}
+
+
+.l-hero {
+    animation-delay: 1s; /* Adjusted delay to stagger properly */
+}
+
+.a-hero{
+    animation-delay: 2s; /* Adjusted delay to stagger properly */
+}
+.b-hero{
+    animation-delay: 3s; /* Adjusted delay to stagger properly */
+}
+
+
+.pattern-background{
+    font-size: 40em;
     animation: weightChange 7s infinite;
 }
 
