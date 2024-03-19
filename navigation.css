@@ -8,7 +8,7 @@
   
   header {
     /* where to set the color of the nav bar */
-      background: lightgray;
+      background: rgb(0, 255, 17);
       text-align: center;
       top:0px;
       position: fixed;
@@ -26,7 +26,7 @@
       padding-top:10px;
       top: 100%;
       left: 0;
-      background: gray;
+      background: rgb(60, 255, 0);
       width: 100%;
       transform: scale(1,0);
       transform-origin: top;
@@ -54,7 +54,7 @@
   }
   /* where to change the font color of the nav bar pop-up */
   nav a:hover {
-      color: orange;
+      color: rgb(0, 255, 13);
   }
   
   .nav-checkbox:checked ~ nav {

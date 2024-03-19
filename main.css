@@ -22,10 +22,11 @@
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 16px;
 }
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
-    width: min(100% - 3rem, 80ch);
+    /* width: min(100% - 3rem, 80ch); */
     margin-inline: auto;
 }
 /* how the page wrapper appears on desktop */
@@ -49,6 +50,10 @@ grid-area: h;
         font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-style: normal;
+            width: min(100% - 3rem, 75ch);
+            margin-inline: auto;
+
+
 }
 
 .variations{
@@ -61,30 +66,35 @@ grid-area: a;
 
 /* CSS for the footer */
 footer{
-    font-size: 3em;
-    background-color: rgb(211, 198, 198);
+    font-size: 2em;
+    background-color: rgb(13, 255, 0);
     color: rgb(0, 0, 0);
-    font-weight:12; 
+    font-weight:8; 
     text-align: center;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: oblique;
+    margin: center;
+    padding: 1px;
 }
 
 /* variable font animation */
 h1{
     font-size: 3em;
-    color: rgb(11, 255, 36);
+    color: rgb(0, 0, 0);
     font-family: "Roboto", sans-serif;
     font-weight: bold;
     font-style: bold;
+   
+  
+    
 }
 
 h2{
     color: rgb(0, 255, 0);
     font-weight:20; 
     text-align: center;
-    font-size: 10em;
+    font-size: 12em;
     animation: weightChange 7s infinite;
 }
 
@@ -92,7 +102,7 @@ h3{
     color: rgb(0, 255, 0);
     font-weight:20; 
     text-align: center;
-    font-size: 8em;
+    font-size: 10em;
     animation: weightChange 7s infinite;
 }
 
@@ -158,7 +168,48 @@ h3{
 
     
 }
+
+
+  /* Hover effect with animation */
+  .hover-effect {
+    position: relative;
+    color: #04ff36;
+    transition: color 0.3s;
+  }
+
+  .hover-effect::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #00ff22;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  .hover-effect:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+  /* Resetting default button styles */
+a {display: inline-block;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+   
+    border-radius: 10px;
+    font-size: 16px;
+}
 /* variable font that changes on hover */
+
+.variable{
+    font-size:16px;
+}
 .variable-font{
     font-weight:1 ;
     height:100vh;
@@ -190,6 +241,17 @@ h3{
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-rows: auto;
     font-size: 160px;
+}
+/* Fancy button styles */
+.shadow {
+    background-color: #40ff00ce;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .special-character-wrapper div {
