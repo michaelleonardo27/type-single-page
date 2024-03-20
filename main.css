@@ -23,6 +23,7 @@
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
+    
 }
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
@@ -50,8 +51,8 @@ grid-area: h;
         font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-style: normal;
-            width: min(100% - 3rem, 75ch);
-            margin-inline: auto;
+         width: min(100% - 3rem, 75ch);
+        margin-inline: auto;
 
 
 }
@@ -81,10 +82,11 @@ footer{
 /* variable font animation */
 h1{
     font-size: 3em;
-    color: rgb(0, 0, 0);
+    color: rgb(0, 255, 34);
     font-family: "Roboto", sans-serif;
     font-weight: bold;
     font-style: bold;
+   
    
   
     
@@ -245,13 +247,14 @@ a {display: inline-block;
 /* Fancy button styles */
 .shadow {
     background-color: #40ff00ce;
-    color: #fff;
+    color: #000000;
     border: none;
     border-radius: 50px;
-    padding: 15px 30px;
+    padding: 8px 30px;
     font-weight: bold;
     text-transform: uppercase;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    
 }
 
 .special-character-wrapper div {
