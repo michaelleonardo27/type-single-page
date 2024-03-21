@@ -22,12 +22,12 @@
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 16px;
+    font-size: 25px;
     
 }
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
-    /* width: min(100% - 3rem, 80ch); */
+    width: min(100% - 3rem, 140ch);
     margin-inline: auto;
 }
 /* how the page wrapper appears on desktop */
@@ -51,8 +51,9 @@ grid-area: h;
         font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-style: normal;
+        font-size: 25px;
          width: min(100% - 3rem, 75ch);
-        margin-inline: auto;
+        margin-inline: right;
 
 
 }
@@ -77,6 +78,7 @@ footer{
     font-style: oblique;
     margin: center;
     padding: 1px;
+
 }
 
 /* variable font animation */
@@ -190,6 +192,7 @@ h3{
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out 0s;
+    
   }
 
   .hover-effect:hover::before {
@@ -203,14 +206,19 @@ a {display: inline-block;
     border: none;
     outline: none;
     cursor: pointer;
-   
     border-radius: 10px;
-    font-size: 16px;
+    font-size: 25px;
 }
 /* variable font that changes on hover */
 
 .variable{
-    font-size:16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    width: min(100% - 3rem, 140ch);
+    margin-inline: auto;
+
 }
 .variable-font{
     font-weight:1 ;
@@ -242,11 +250,11 @@ a {display: inline-block;
     color: rgb(0, 255, 0);
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-rows: auto;
-    font-size: 160px;
+    font-size: 180px;
 }
 /* Fancy button styles */
 .shadow {
-    background-color: #40ff00ce;
+    background-color: #40ff00;
     color: #000000;
     border: none;
     border-radius: 50px;
@@ -256,7 +264,13 @@ a {display: inline-block;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     
 }
-
+.link-paragraph{
+    font-size: 25px;
+}
+.download-paragraph{
+    font-size: 25px;
+    
+}
 .special-character-wrapper div {
     animation: weightChangeSpecialCharacter 6s infinite;
 }
