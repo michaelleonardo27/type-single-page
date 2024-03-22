@@ -85,7 +85,7 @@ footer{
 h1{
     font-size: 3em;
     color: rgb(0, 255, 34);
-    font-family: "Roboto", sans-serif;
+    font-family: 'Lab DJR';
     font-weight: bold;
     font-style: bold;
    
@@ -262,13 +262,36 @@ a {display: inline-block;
     font-weight: bold;
     text-transform: uppercase;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    
+    animation: button-animate 3s infinite;
 }
+
+    @keyframes button-animate {
+        0%, 100%{
+            font-variation-settings: 
+            'SIZE' 75, 
+            'OVAL' 0,
+            'BEVL' 10,
+            'SPRK' 50;  
+        font-size:30px;       }
+        50%{
+            font-variation-settings: 
+        'SIZE' 85, 
+        'OVAL' 800, 
+        'BEVL' 800, 
+        'SPRK' 1000;
+        font-size:35px;  }
+        
+    }
 .link-paragraph{
     font-size: 25px;
+    font-style: bold;
 }
 .download-paragraph{
     font-size: 25px;
+    font-style: bold;
+
+    
+    
     
 }
 .special-character-wrapper div {

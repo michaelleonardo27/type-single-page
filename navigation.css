@@ -8,7 +8,7 @@
   
   header {
     /* where to set the color of the nav bar */
-      background: rgb(49, 211, 60);
+      background: rgb(60, 255, 0);
       text-align: center;
       top:0px;
       position: fixed;
@@ -120,6 +120,7 @@
     }
     .logo {
       grid-column: 2 / span 1;
+      color:black;
     }
     nav {
       all: unset;
