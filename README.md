@@ -21,5 +21,7 @@
 
     this project its my first website, it was really challenging and also frustrated, because i was stock in te coding process.
 
+    While doing this project I used Teacher Henderson's codes, for my own use. I had a lot of problems with this project but I think I achieved something that promises a lot.
+
 
 
